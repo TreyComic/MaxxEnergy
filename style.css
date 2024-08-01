@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navigation {
+    font-size: 18px;
+}
+
+main {
+    min-height: 60vh;
+}
+
+.logo-alternative {
+    position: relative;
+}
+
+.logo-stack {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border: 1px solid #ccc;
+    transform: rotate(10deg);
+    z-index: 1;
+}
+
+.logo:nth-child(2) {
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+.logo:nth-child(3) {
+    transform: rotate(5deg);
+    z-index: 3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+}
