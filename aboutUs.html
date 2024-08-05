@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body class="void textLayingOnColor">
-   
+    <!-- Header -->
     <header class="void">
         <nav class="navbar navbar-expand-lg bg-body-tertiary void">
             <div class="container-fluid textLayingOnColor">
@@ -45,16 +45,32 @@
         </nav>
     </header>
 
-    
+    <!-- Main Content -->
     <main class="container text-center my-4">
-        <div class="hero d-flex justify-content-center align-items-center min-vh-100" style="background-color: #115d98; color: #fff;">
-            <div class="overlay"></div>
-            <div class="square mx-3 frontHeaderShift">
-                <h1>About Us</h1>
-                <p>Maxx Energy harnesses the power of the sun to deliver sustainable, reliable, and cost-effective solar panel solutions, empowering a cleaner and greener future for our world.</p>
-            </div>
-            <div class="square mx-3">
-                <img src="Images/cat.jpg" width="250" height="250">
+        <div class="hero d-flex flex-column justify-content-center align-items-center min-vh-100" style="background-color: #115d98; color: #fff;">
+            <h1>About Us</h1>
+            <p>Maxx Energy harnesses the power of the sun to deliver sustainable, reliable, and cost-effective solar panel solutions, empowering a cleaner and greener future for our world.</p>
+            <!-- Gallery -->
+            <div id="solarGallery" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/blue-solar-panels-and-pink-sunset-sky-m9ckjrvw449z3nxo.jpg" class="d-block w-100" alt="Solar Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/download (5).png" class="d-block w-100" alt="Solar Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/life-expectancy-solar-panels.jpg" class="d-block w-100" alt="Solar Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#solarGallery" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#solarGallery" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
@@ -115,15 +131,15 @@
 
     </main>
 
-
+    <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
         <div class="container">
             <p>&copy; 2024 MAXX Energy. All rights reserved.</p>
-            <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+            <p><a href="privacy.html" class="text-white">Privacy Policy</a> | <a href="terms.html" class="text-white">Terms of Service</a></p>
         </div>
     </footer>
 
-    
+    <!-- Bootstrap JS (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
