@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-image: url(Images/ecology-solar-power-station-panels-on-a-roof-of-a-residential-house-green-eco-friendly-house-concept-with-solar-energy-panel-close-up-of-solar-power-plant-eco-technology-high-quality-4k-footage-video.jpg);
     background-size: cover;
     background-position: center;
@@ -8,6 +9,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+=======
+    background-color: #4b6aa2;
+    width: 100%;
+    margin: 0;
+>>>>>>> d55c52cbfb6c53bf744d64332599e1452c381357
 }
 
 header {
@@ -24,9 +30,14 @@ header {
     margin-left: 15px;
 }
 
+<<<<<<< HEAD
 .navbar {
     background-color: transparent !important;
     box-shadow: none;
+=======
+main {
+    min-height: 30vh;
+>>>>>>> d55c52cbfb6c53bf744d64332599e1452c381357
 }
 
 .hero {
@@ -40,6 +51,7 @@ header {
 
 .hero .frontHeaderShift {
     position: relative;
+<<<<<<< HEAD
     z-index: 2;
 }
 
@@ -81,6 +93,33 @@ p {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+=======
+    width: 150px;
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #4b6aa2;
+    border: 1px solid #cccccc00;
+    z-index: 1;
+}
+
+.logo:nth-child(2) {
+    background-color: #3e5889;
+
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+.logo:nth-child(3) {
+    background-color: #6581b5;
+
+    transform: rotate(0deg);
+    z-index: 3;
+>>>>>>> d55c52cbfb6c53bf744d64332599e1452c381357
 }
 
 footer {
@@ -130,6 +169,7 @@ footer a:hover {
     height: auto;
 }
 
+<<<<<<< HEAD
 .carousel-item {
     padding: 0;
     margin: 0;
@@ -139,3 +179,19 @@ footer a:hover {
     padding: 0;
     margin: 0;
 }
+=======
+.hero {
+    min-height: 80vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textLayingOnColorW{
+    color: white;
+}
+
+.textLayingOnColorB{
+    color: rgb(0, 0, 0);
+}
+>>>>>>> d55c52cbfb6c53bf744d64332599e1452c381357

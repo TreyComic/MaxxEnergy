@@ -15,33 +15,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 </head>
-<body class="void textLayingOnColor">
+<body class="void" style="background-color: #6581b5;">
     <!-- Header -->
     <header class="void">
       <nav class="navbar navbar-expand-lg bg-body-tertiary void">
           <div class="container-fluid textLayingOnColor">
-            <p class="navbar-brand textLayingOnColor" href="#">
+            <p class="navbar-brand textLayingOnColorB" href="#">
               <img src="Images/MM.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="border-radius: 5px;">
               Maxx Energy
             </p>
           <ul class="nav justify-content-end">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+              <a class="nav-link dropdown-toggle textLayingOnColorB" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Login</a></li>
                 <li><a class="dropdown-item" href="#">Sign Up</a></li>
               </ul>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
+              <a class="nav-link active textLayingOnColorB" aria-current="page" href="#">Active</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link textLayingOnColorB" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link textLayingOnColorB" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link textLayingOnColorB" href="#">Link</a>
             </li>
           </ul>
         </div>
@@ -51,15 +51,27 @@
     <!-- Main Content -->
     <main class="container text-center my-4">
         
-        <div class="d-flex justify-content-center align-items-center min-vh-100">
-            <div class="square mx-3 frontHeaderShift">
-                <h1>Maxx Energy</h1>
-                <p>Maxx Energy harnesses the power of the sun to deliver sustainable, reliable, and cost-effective solar panel solutions, empowering a cleaner and greener future for our world.</p>
+        <div class="container py-6 hero">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 mx-auto col-sm-8 col-lg-6">
+              <div class="logo-stack logo"></div>
             </div>
-            <div class="square mx-3">
-                <img src="Images/cat.jpg" width="250" height="250">
-            </div>
+            <div class="col-lg-6" style="text-align: left;">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                      <h6>Maxx Energy</h6>
+                        <h2 class=" display-5">Energy Solutions:</h2>
+                    </div>
+                </div>
+                
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                      <h2 class=" display-5">Maxxing Out A Cleaner Future</h2>
+                    </p>
+                    </div>
+                </div>
         </div>
+    </div>
 
 
     </main>
@@ -67,9 +79,7 @@
 </div>
 
     <!-- Footer -->
-    <footer class="text-center py-3">
-        Footer
-    </footer>
+    
 
     <!-- Bootstrap JS (optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
