@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body class="void" style="background-color: #6581b5;">
@@ -20,33 +21,64 @@
     <header class="void">
       <nav class="navbar navbar-expand-lg bg-body-tertiary void">
           <div class="container-fluid textLayingOnColor">
-            <p class="navbar-brand textLayingOnColorB" href="#">
-              <img src="Images/MM.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="border-radius: 5px;">
+            <p class="bebas-neue-regular navbar-brand textLayingOnColorB" href="#">
+              <img src="Images/MAXX-Energy-Logo-1A.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="border-radius: 5px;">
               Maxx Energy
             </p>
-          <ul class="nav justify-content-end">
+          <ul class="nav justify-content-end josefin-sans">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle textLayingOnColorB" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                <li><a class="dropdown-item" href="passReset.html">Reset Password</a></li>
               </ul>
             <li class="nav-item">
-              <a class="nav-link active textLayingOnColorB" aria-current="page" href="#">Active</a>
+              <a class="nav-link textLayingOnColorB" href="aboutUs.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link textLayingOnColorB" href="#">Link</a>
+              <a class="nav-link textLayingOnColorB" href="contactUs.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link textLayingOnColorB" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link textLayingOnColorB" href="#">Link</a>
+              <a class="nav-link textLayingOnColorB" href="FAQ.html">FAQ</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
+    <div class="social-icons">
+      <ul>
+        <li>
+          <a class="facebook" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
 
     <!-- Main Content -->
     <main class="container text-center my-4">
@@ -54,19 +86,37 @@
         <div class="container py-6 hero">
         <div class="row flex-lg-row-reverse align-items-center g-5">
             <div class="col-10 mx-auto col-sm-8 col-lg-6">
-              <div class="logo-stack logo"></div>
+              <div class="logo-stack">
+                <div class="logo"></div>
+                <div class="logo"></div>
+                <div class="logo">
+                  <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="Images/AdobeStock_369434840.jpeg" alt="Slide 1">
+                        <img src="Images/AdobeStock_730734680.jpeg" alt="Slide 2">
+                        <img src="Images/AdobeStock_80511892.jpeg" alt="Slide 3">
+                        <img src="Images/AdobeStock_809523421.jpeg" alt="Slide 4">
+                    </div>
+                </div>
+                
+                  <img src="Images/MAXX-Energy-Logo-1A.png" style="height: 30px; width: 30px; position: absolute; bottom: 55px; left: 50px;"> <h2 class="bebas-neue-regular" style="color: #fcaf17; position: absolute; bottom: 40px; left: 90px;">Maxx</h2>
+                  <h3 class="bebas-neue-regular" style="color: #fcaf17; position: absolute; bottom: 40px; left: 340px;">#SolarPower</h3>
+                </div>
+
+              </div>
+
             </div>
             <div class="col-lg-6" style="text-align: left;">
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                      <h6>Maxx Energy</h6>
-                        <h2 class=" display-5">Energy Solutions:</h2>
+                      <h6 class="josefin-sans">Maxx Energy</h6>
+                        <h2 class="bebas-neue-regular display-5">Energy Solutions:</h2>
                     </div>
                 </div>
                 
                 <div class="lc-block mb-3">
                     <div editable="rich">
-                      <h2 class=" display-5">Maxxing Out A Cleaner Future</h2>
+                      <h2 class="bebas-neue-regular display-5">Energy Reinvisioned, Reimagined, Reinvented; For The New Future</h2>
                     </p>
                     </div>
                 </div>
