@@ -298,3 +298,42 @@ footer {
   .social-icons .instagram:hover span { 
     background: #fcaf17;
   } 
+
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .social-media {
+    margin-bottom: 10px;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer .social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
