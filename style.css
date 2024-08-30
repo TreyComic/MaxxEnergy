@@ -1,339 +1,471 @@
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #4b6aa2;
-    width: 100%;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4b6aa2; 
+  color: white; 
+  width: 100%;
+  margin: 0;
 }
 
 header {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .logo-name {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .navigation {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 main {
-    min-height: 30vh;
+  min-height: 30vh;
 }
 
 .logo-alternative {
-    position: relative;
+  position: relative;
 }
 
 .logo-stack {
-    position: relative;
-    width: 500px;
-    height: 500px;
+  position: relative;
+  width: 500px;
+  height: 500px;
 }
 
 .logo {
-    width: 500px;
-    height: 500px;
-    background-color: #4b6aa2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transform: rotate(-10deg);
-
+  width: 500px;
+  height: 500px;
+  background-color: #4b6aa2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-10deg);
 }
 
 .logo:nth-child(2) {
-    background-color: #3e5889;
-    transform: rotate(-05deg);
-    z-index: 2;
+  background-color: #3e5889;
+  transform: rotate(-05deg);
+  z-index: 2;
 }
 
 .logo:nth-child(3) {
-    background-color: #314B71;
-
-    transform: rotate(0deg);
-    z-index: 3;
+  background-color: #314B71;
+  transform: rotate(0deg);
+  z-index: 3;
 }
 
-footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e0e0e0;
-    padding: 20px;
-}
+
 
 .frontHeaderShift {
-    text-align: left;
-    flex: auto;
+  text-align: left;
+  flex: auto;
 }
 
-.void{
-    background-color: #30303000;
-    border-bottom: none;
-    box-shadow: none;
+.void {
+  background-color: #4b6aa2; 
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .josefin-sans {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: bold;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
 }
 
 .navbar-nav .nav-link {
-    margin-left: 15px; /* Adjust spacing between buttons if needed */
-  }
+  margin-left: 15px;
+}
 
 .navbar {
-    background-color: transparent !important; /* Override Bootstrap's default background */
-    box-shadow: none; /* Remove any box shadow */
+  background-color: transparent !important;
+  box-shadow: none;
 }
 
 .hero {
-    min-height: 80vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.textLayingOnColorW{
-    color: white;
+.textLayingOnColorW {
+  color: white;
 }
 
-.textLayingOnColorB{
-    color: rgb(0, 0, 0);
+.textLayingOnColorB {
+  color: rgb(0, 0, 0);
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; /* Space between images */
-    width: 300px; /* Adjust the size of your square container */
-    height: 300px;
-    margin-left: 100px;
-    margin-top: 100px;
-    place-items: center;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  margin-top: 100px;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 3px; /* Rounded borders */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 1 / 1; /* Ensure 1:1 aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
 .carousel {
-    width: 300px;
-    height: 300px;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    margin: 50px auto;
-    border-radius: 1px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-slide {
-    display: flex;
-    width: 150%;
-    height: 100%;
-
-    animation: slide 22s infinite;
+  display: flex;
+  width: 150%;
+  height: 100%;
+  animation: slide 22s infinite;
 }
 
 .carousel-slide img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 @keyframes slide {
-    0% { transform: translateX(0%); }
-    25% { transform: translateX(-110%); }
-    50% { transform: translateX(-210%); }
-    75% { transform: translateX(-310%); }
-    100% { transform: translateX(0%); }
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(-110%); }
+  50% { transform: translateX(-210%); }
+  75% { transform: translateX(-310%); }
+  100% { transform: translateX(0%); }
 }
 
 /* Socials Buttons */
-
 .social-icons {
-    margin: 0;
-    padding: 0;
-    background: #ebebeb;
-  }
-  
-  .social-icons ul {
-    position: absolute;
-    top: 50%;
-    left: -1%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-  
-  .social-icons ul li {
-    list-style: none;
-  }
-  
-  .social-icons ul li a {
-    display: block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-    margin: 0 30px;
-    transition: .5s;
-  }
-  
-  .social-icons ul li a span {
-    position: absolute;
-    transition: transform .5s;
-  }
-  
-  .social-icons ul li a span:nth-child(1),
-  .social-icons ul li a span:nth-child(3) {
-    width: 100%;
-    height: 3px;
-    background: #000000;
-  }
-  
-  .social-icons ul li a span:nth-child(1) {
-    top: 0;
-    left: 0;
-    transform-origin: right;
-  }
-  
-  .social-icons ul li a:hover span:nth-child(1) {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s;
-  }
-  
-  .social-icons ul li a span:nth-child(3) {
-    bottom: 0;
-    left: 0;
-    transform-origin: left;
-  }
-  
-  .social-icons ul li a:hover span:nth-child(3) {
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s;
-  }
-  
-  .social-icons ul li a span:nth-child(2),
-  .social-icons ul li a span:nth-child(4) {
-    width: 3px;
-    height: 100%;
-    background: #404040;
-  }
-  
-  .social-icons ul li a span:nth-child(2) {
-    top: 0;
-    left: 0;
-    transform: scale(0);
-    transform-origin: bottom;
-  }
-  
-  .social-icons ul li a:hover span:nth-child(2) {
-    transform: scale(1);
-    transform-origin: top;
-    transition: transform .5s;
-  }
-  
-  .social-icons ul li a span:nth-child(4) {
-    top: 0;
-    right: 0;
-    transform: scale(0);
-    transform-origin: top;
-  }
-  
-  .social-icons ul li a:hover span:nth-child(4) {
-    transform: scale(1);
-    transform-origin: bottom;
-    transition: transform .5s;
-  }
-  
-  .social-icons .facebook:hover {
-    color: #3b5998;
-  }
-  
-  .social-icons .facebook:hover span { 
-    background: #3b5998;
-  }
-  
-  .social-icons .twitter:hover {
-    color: #1da1f2;
-  }
-  
-  .social-icons .twitter:hover span { 
-    background: #1da1f2;
-  }
-  
-  .social-icons .instagram:hover {
-    color: #fcaf17;
-  }
-  
-  .social-icons .instagram:hover span { 
-    background: #fcaf17;
-  } 
-
-
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+  margin: 0;
+  padding: 0;
+  background: #ebebeb;
 }
 
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+.social-icons ul {
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  display: block;
 }
+
+.social-icons ul li {
+  list-style: none;
+}
+
+.social-icons ul li a {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 30px;
+  transition: .5s;
+}
+
+.social-icons ul li a span {
+  position: absolute;
+  transition: transform .5s;
+}
+
+.social-icons ul li a span:nth-child(1),
+.social-icons ul li a span:nth-child(3) {
+  width: 100%;
+  height: 3px;
+  background: #000000;
+}
+
+.social-icons ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+.social-icons ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+.social-icons ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+.social-icons ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+.social-icons ul li a span:nth-child(2),
+.social-icons ul li a span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  background: #404040;
+}
+
+.social-icons ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+
+.social-icons ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform .5s;
+}
+
+.social-icons ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+
+.social-icons ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform .5s;
+}
+
+.social-icons .facebook:hover {
+  color: #3b5998;
+}
+
+.social-icons .facebook:hover span {
+  background: #3b5998;
+}
+
+.social-icons .twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons .twitter:hover span {
+  background: #1da1f2;
+}
+
+.social-icons .instagram:hover {
+  color: #fcaf17;
+}
+
+.social-icons .instagram:hover span {
+  background: #fcaf17;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: auto; /* Ensure it's pushed to the bottom */
+}
+
+
+
+main {
+  flex-grow: 1;
+}
+
+
 
 .footer .social-media {
-    margin-bottom: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds space between the icons */
 }
 
 .footer .social-media a {
-    margin: 0 10px;
-    display: inline-block;
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .footer .social-media img {
-    width: 30px;
-    height: 30px;
+  width: 40px; /* Slightly increased the size */
+  height: 40px;
+  border-radius: 50%; /* Makes the images circular */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Adds smooth transition for hover effects */
 }
 
+.footer .social-media img:hover {
+  transform: scale(1.1); /* Scales up the icon slightly on hover */
+  opacity: 0.85; /* Adds a slight opacity effect on hover */
+}
+
+
 .footer p {
-    font-size: 14px;
-    margin: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+#team {
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#team p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#team .card {
+  margin-bottom: 1.5rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#team .card:hover {
+  transform: translateY(-5px);
+}
+
+#team .card-img-top {
+  height: 300px; /* Ensures all images have the same height */
+  object-fit: cover; /* Ensures images fill the area without distortion */
+  width: 100%; /* Ensures all images fill the width of the card */
+}
+
+#team .card {
+  margin-bottom: 1.5rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%; /* Ensures all cards have the same height */
+  display: flex;
+  flex-direction: column;
+}
+
+#team .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+#team .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#team .card-text {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.data-visualization-section {
+  background: linear-gradient(rgba(17, 93, 152, 0.5), rgba(17, 93, 152, 0.5)), url('Images/blue-solar-panels-and-pink-sunset-sky-m9ckjrvw449z3nxo.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+  color: white;
+  border-radius: 10px;
+}
+
+.data-visualization-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.data-visualization-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.data-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+/* Login Form */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #4b6aa2;
+  margin-bottom: 20px;
+}
+
+.card .form-control {
+  border-radius: 5px;
+  border: 1px solid #4b6aa2;
+}
+
+.card .btn {
+  background-color: #4b6aa2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #3e5889;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
