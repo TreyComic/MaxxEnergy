@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MAXX Energy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Private Data - MAXX Energy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 </head>
 <body class="void textLayingOnColor">
 
@@ -23,9 +26,9 @@
                 <ul class="nav justify-content-end josefin-sans">
                     <li class="nav-item">
                         <a class="nav-link textLayingOnColorB" href="index.html">Home</a>
-                      </li>
+                    </li>
                     <li class="nav-item">
-                      <a class="nav-link textLayingOnColorB" href="aboutUs.html">About Us</a>
+                        <a class="nav-link textLayingOnColorB" href="aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link textLayingOnColorB" href="public-data.html">Maxx Data</a>
@@ -34,10 +37,10 @@
                         <a class="nav-link textLayingOnColorB" href="public-data.html">Private Data</a>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link textLayingOnColorB" href="contactUs.html">Contact Us</a>
+                        <a class="nav-link textLayingOnColorB" href="contactUs.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link textLayingOnColorB" href="FAQ.html">FAQ</a>
+                        <a class="nav-link textLayingOnColorB" href="FAQ.html">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -45,33 +48,18 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h2 class="bebas-neue-regular text-center">Login to Your Account</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="email" class="form-label josefin-sans">Email address</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label josefin-sans">Password</label>
-                            <input type="password" class="form-control" id="password" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 bebas-neue-regular">Login</button>
-                    </form>
-                    <p class="text-center mt-3">
-                        <a href="passReset.html" class="textLayingOnColorB">Forgot Password?</a>
-                    </p>
-                    <p class="text-center">
-                        <a href="register.html" class="textLayingOnColorB">Don't have an account? Sign Up</a>
-                    </p>
-                </div>
+    <main class="container text-center my-4">
+        <div class="data-visualization-section">
+            <h2>MAXX Energy Private Data</h2>
+            <p>Welcome to the private data page. Here, you can view confidential data visualizations to better understand our business needs.</p>
+            
+            <!-- Embed the Power BI Report or other Data Visualization -->
+            <div class="data-card">
+                <iframe width="100%" height="600px" src="https://app.powerbi.com/reportEmbed?reportId=d66d81c2-2a76-4831-a6f0-3d4941049c3d&autoAuth=true&ctid=bbce5c37-f181-4d0c-9310-7f877336e1cf" frameborder="0" allowFullScreen="true"></iframe>
             </div>
         </div>
     </main>
-
+    
     <!-- Social Share Sidebar -->
     <div class="social-icons">
         <ul>
@@ -124,26 +112,25 @@
         </div>
     </footer>
 
-<!-- JavaScript for form handling -->
-<script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-
-        if (email === 'user@example.com' && password === 'password123') {
-            // Redirect to the Maxx Data page upon successful login
-            window.location.href = 'private-data.html';
-        } else {
-            // Show error message for incorrect credentials
-            document.getElementById('error-message').textContent = 'Incorrect email or password. Please try again.';
+ <!-- Java script to limit acess to private data page 
+     <script>
+        // Simulate checking for user authentication
+        function isAuthenticated() {
+            // Replace with actual authentication logic (e.g., checking a token)
+            return localStorage.getItem('userAuthenticated') === 'true';
         }
-    });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    
+        // Redirect to login if not authenticated
+        if (!isAuthenticated()) {
+            alert("You must be logged in to access this page.");
+            window.location.href = 'login.html';
+        }
+    </script>
+     -->
+    
+    
 </body>
 </html>
